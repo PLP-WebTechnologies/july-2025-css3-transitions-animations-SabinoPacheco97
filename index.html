@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto CSS + JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Botões de interação -->
+  <button onclick="toggleBox()">Mostrar Caixa</button>
+  <button onclick="toggleModal()">Abrir Modal</button>
+
+  <!-- Elemento animado -->
+  <div class="box" id="animatedBox"></div>
+
+  <!-- Modal e fundo escurecido -->
+  <div class="overlay" id="overlay" onclick="toggleModal()"></div>
+  <div class="modal" id="modal">
+    <p>Este é um modal animado!</p>
+    <button onclick="toggleModal()">Fechar</button>
+  </div>
+
+  <!-- Script JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
